@@ -64,6 +64,7 @@ button {
 .main-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .nav-container,
@@ -73,8 +74,8 @@ button {
 }
 
 .menu-button {
+  line-height: 0;
   margin: 0;
-  margin-left: auto;
   padding: 0;
   display: block;
   background-color: transparent;
@@ -91,6 +92,13 @@ button {
   fill: #2E2F42;
 }
 
-.icon-close-menu {
+.menu-button .icon-close-menu {
   display: none;
+}
+
+.mobile-menu {
+  position: absolute;
+  width: 100vh;
+  height: 100vh;
+  background-color: black;
 }/*# sourceMappingURL=main.css.map */
