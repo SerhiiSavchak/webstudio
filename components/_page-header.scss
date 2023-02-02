@@ -30,7 +30,6 @@
 
 .nav-container,
 .contacts-container {
-	position: absolute;
 	display: none;
 }
 
@@ -43,25 +42,14 @@
 	border: none;
 }
 
-.menu-icon {
+.icon-burger {
 	width: 30px;
 	height: 19px;
-}
-
-.icon-burger {
 	display: inline-block;
 fill:$title-text-color;	
-
 }
 
-.menu-icon .icon-close-menu {
-	display: none;
-	width: 8px;
-	height: 8px;
-	
-}
-
-.menu-button.is-open {
+.menu-button-close {
 	padding: 8px;
 	display: flex;
 		justify-content: center;
@@ -75,15 +63,24 @@ fill:$title-text-color;
 			fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-button.is-open .icon-close-menu {
-	display: inline-block;
+.icon-close {
+	display: block;
+	width: 8px;
+	height: 8px;
+}
+
+
+.mobile-menu {
+	position: absolute;
+	background-color: bisque;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	visibility: hidden;
 	
 }
-
-.menu-button.is-open .icon-burger {
-	display: none;
-}
-
 
 
 // .modal-button {
