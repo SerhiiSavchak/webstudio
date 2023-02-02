@@ -73,8 +73,6 @@ button {
 }
 
 .menu-button {
-  width: 30px;
-  height: 19px;
   margin: 0;
   margin-left: auto;
   padding: 0;
@@ -83,15 +81,16 @@ button {
   border: none;
 }
 
+.menu-icon {
+  width: 30px;
+  height: 19px;
+}
+
 .icon-burger {
+  display: inline-block;
   fill: #2E2F42;
 }
 
 .icon-close-menu {
   display: none;
-}
-
-.menu-button > svg {
-  width: 30px;
-  height: 19px;
 }/*# sourceMappingURL=main.css.map */

@@ -34,8 +34,6 @@
 }
 
 .menu-button {
-		width: 30px;
-			height: 19px;
 	margin: 0;
 	margin-left: auto;
 	padding: 0;
@@ -44,15 +42,18 @@
 	border: none;
 }
 
+.menu-icon {
+	width: 30px;
+	height: 19px;
+}
+
 .icon-burger {
+	display: inline-block;
 fill:$title-text-color;	
+
 }
 
 .icon-close-menu {
 display: none;
 }
 
-.menu-button>svg {
-	width: 30px;
-		height: 19px;
-}
