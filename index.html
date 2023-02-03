@@ -26,7 +26,8 @@
     <!--Header-->
     <header class="page-header">
       <!--Navigate-->
-      <div class="container main-nav">
+
+      <div class="main-nav-container container">
 			<a href="./index.html" class="logo">
             <span class="logo-firstpart">Web</span>Studio</a
           >
@@ -45,6 +46,7 @@
         </nav>
 
         <!--Contacts-->
+
         <address class="contacts-container">
           <ul class="contacts-list list">
             <li class="contacts-item">
@@ -59,18 +61,68 @@
             </li>
           </ul>
         </address>
-		  <button class="menu-button" aria-expanded="false">
+		  <button class="menu-button" aria-expanded="false" data-menu-open>
 		  	<svg class="icon-burger">
 					<use href="./images/sprite/icons.svg#icon-burger"></use>
 				 </svg>
 		  </button>
       </div>
-		<div class="mobile-menu">
-		  <button class="menu-button-close">
-		  	<svg class="icon-close">
-				<use href="./images/sprite/icons.svg#icon-close"></use>
-			  </svg>
-		  </button>
+
+		<!-- Mobile menu -->
+
+		<div class="mobile-menu" data-menu>
+		 	<div class="menu-container container">
+		 		 <button class="menu-button-close" data-menu-close>
+				  	<svg class="icon-close">
+						<use href="./images/sprite/icons.svg#icon-close"></use>
+					  </svg>
+				  </button>
+				  <ul class="menu-nav-list list">
+					<li class="menu-nav-item"><a class="menu-nav-link" href="">Studio</a></li>
+					<li class="menu-nav-item"><a class="menu-nav-link" href="">Portfolio</a></li>
+					<li class="menu-nav-item"><a class="menu-nav-link" href="">Contacts</a></li>
+				  </ul>
+					<address class="menu-contacts">
+						<ul class="menu-contacts-list list">
+							<li class="menu-contacts-item"><a class="menu-contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+							</li>
+							<li class="menu-contacts-item"><a class="menu-contacts-link email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+							</li>
+						</ul>
+					</address>
+				  <ul class="menu-social-list list">
+		                <li class="menu-social-item">
+		                  <a class="menu-social-link" aria-label="instagram" href="">
+		                    <svg class="social-icon">
+		                      <use
+		                        href="./images/sprite/icons.svg#icon-instagram"
+		                      ></use>
+		                    </svg>
+		                  </a>
+		                </li>
+		                <li class="menu-social-item">
+		                  <a class="menu-social-link" aria-label="twitter" href="">
+		                    <svg class="social-icon">
+		                      <use href="./images/sprite/icons.svg#icon-twitter"></use>
+		                    </svg>
+		                  </a>
+		                </li>
+		                <li class="menu-social-item">
+		                  <a class="menu-social-link" aria-label="facebook" href="">
+		                    <svg class="social-icon">
+		                      <use href="./images/sprite/icons.svg#icon-facebook"></use>
+		                    </svg>
+		                  </a>
+		                </li>
+		                <li class="menu-social-item">
+		                  <a class="menu-social-link" aria-label="linkedin" href="">
+		                    <svg class="social-icon">
+		                      <use href="./images/sprite/icons.svg#icon-linkedin"></use>
+		                    </svg>
+		                  </a>
+		                </li>
+		              </ul>
+		 	</div>
 		  </div>
     </header>
 
@@ -571,7 +623,7 @@
 	 <!-- Script js -->
     <script src="./js/modal.js"></script>
 
-	 <script src="./js/mobile-menu.js"></script>
+	 <script src="./js/mobile_menu.js"></script>
 	 
   </body>
 </html>
