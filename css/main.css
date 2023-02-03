@@ -307,4 +307,82 @@ button {
   .mobile-menu {
     display: none;
   }
+}
+.section-hero {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-title {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.hero-button {
+  display: inline-block;
+  max-width: 170px;
+  padding: 16px 32px;
+  background-color: #4D5AE5;
+  color: #FFFFFF;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+  border: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-button:hover, .hero-button:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: #404BBF;
+}
+
+@media screen and (max-width: 767px) {
+  .section-hero {
+    max-width: 428px;
+    padding: 112px 0;
+    height: 432px;
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/hero-mobile.jpg");
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/hero-mobile@2x.jpg");
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero-title {
+    max-width: 318px;
+    font-size: 36px;
+    line-height: 1.11;
+    color: #FFFFFF;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-hero {
+    height: 436px;
+    width: 768px;
+    padding: 112px 0 108px;
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/hero-tablet.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/hero-tablet@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-title {
+    margin-bottom: 40px;
+    margin-top: 0;
+    width: 494px;
+    font-size: 56px;
+    line-height: 1.07;
+  }
 }/*# sourceMappingURL=main.css.map */
