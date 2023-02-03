@@ -32,6 +32,13 @@
 	display: none;
 }
 
+@media screen and (min-width: 768px) {
+	.nav-container,
+		.contacts-container {
+			display: block;
+		}
+}
+
 .menu-button {
 	line-height: 0;
 	margin: 0;
@@ -39,6 +46,12 @@
 	display: block;
 	background-color: transparent;
 	border: none;
+}
+
+@media screen and (min-width: 768px) {
+	.menu-button {
+ display: none;
+	}
 }
 
 .icon-burger {
