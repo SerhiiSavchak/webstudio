@@ -97,17 +97,11 @@ button {
   color: #4D5AE5;
 }
 
-/* Site Nav */
 .main-nav-container {
   display: flex;
   align-items: center;
 }
 
-@media screen and (max-width: 1199px) {
-  .main-nav-container {
-    justify-content: space-between;
-  }
-}
 @media screen and (max-width: 767px) {
   .menu-button {
     line-height: 0;
@@ -126,6 +120,11 @@ button {
   .nav-container,
 .contacts-container {
     display: none;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .main-nav-container {
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 768px) {
@@ -421,6 +420,11 @@ button {
   color: #2E2F42;
 }
 
+@media screen and (max-width: 767px) {
+  .advantages-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .advantages-title {
     text-align: center;
@@ -436,11 +440,6 @@ button {
   }
   .advantages-icon {
     display: none;
-  }
-}
-@media screen and (max-width: 767px) {
-  .advantages-item:not(:last-child) {
-    margin-bottom: 72px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -460,14 +459,6 @@ button {
   }
   .advantages-title {
     text-align: left;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .advantages-title {
-    margin-bottom: 8px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
   }
 }
 @media screen and (min-width: 1200px) {
