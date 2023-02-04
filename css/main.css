@@ -51,13 +51,14 @@ button {
   }
 }
 
-.container {
-  max-width: 428px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 428px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+  }
 }
-
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -415,23 +416,6 @@ button {
     background-image: linear-gradient(to right, rg(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/hero-desctop@2x.jpg");
   }
 }
-@media screen and (max-width: 767px) {
-  .advantages-item:not(:last-child) {
-    margin-bottom: 72px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .advantages-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .advantages-item {
-    width: calc((100% - 24px) / 2);
-  }
-  .advantages-text {
-    max-width: 356px;
-  }
-}
 .advantages-bg {
   display: none;
 }
@@ -451,4 +435,37 @@ button {
 
 .advantages-text {
   font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .advantages-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .advantages-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .advantages-item:nth-child(odd) {
+    margin-right: 24px;
+  }
+  .advantages-item:nth-child(3),
+.advantages-item:nth-child(4) {
+    margin-top: 72px;
+  }
+  .advantages-text {
+    height: 72px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .advantages-title {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+  }
 }/*# sourceMappingURL=main.css.map */
