@@ -1,11 +1,9 @@
 .page-footer {
+	background-color: $title-text-color;
 }
 
 .footer-container {
-		margin-left: auto;
-		margin-right: auto;
-		padding: 96px 15px;
-		background-color: $title-text-color;
+padding: 96px 15px;
 }
 
 .logo-footer {
@@ -25,8 +23,6 @@
 }
 
 .footer-text {
-	margin-left: auto;
-	margin-right: auto;
 max-width: 268px;
 color: $secondary-accent-color;
 }
@@ -39,9 +35,8 @@ color: $white-color;
 
 .footer-social-list {
 	display: flex;
-	justify-content: center;
-}
 
+}
 
 .footer-social-item {
 width: 40px;
@@ -77,6 +72,7 @@ height: 24px;
 		margin-bottom: 16px;
 		font-weight: 500;
 		color: $white-color;
+		text-align: center;
 }
 
 .footer-form {
@@ -125,6 +121,10 @@ fill: $white-color;
 .footer-logo-container {
 	text-align: center;
 	}
+
+	.footer-form-container {
+		margin-top: 72px;
+	}
 .footer-social-container {
 	margin-top: 72px;
 	text-align: center;
@@ -137,40 +137,75 @@ margin-top: 16px;
 margin-left: auto;
 margin-right: auto;
 }
+.footer-text {
+	margin-left: auto;
+	margin-right: auto;
+}
+.footer-social-list{
+justify-content: center;
+}
+
 }
 
 @media screen and (min-width:768px) {
+.logo-social-wrap {
+	display: flex;
+	}
+.input-button-wrap {
+	display: flex;
+	align-items: center;
+}
+.footer-container {
+	padding: 100px 0;
+}
+.footer-form-button {
+	margin-left: 24px;
+}
+}
+
+@media screen and (min-width:768px) and (max-width: 1199px) {
 .footer-container {
 	padding-left: 108px;
 	padding-right: 164px;
+	width: 768px;
+	margin-left: auto;
+	margin-right: auto;
 }
-.footer-logo-social-wrap {
-display: flex;
-justify-content: center;
-}
+
 .footer-social-container {
 	margin-left: 24px;
 }
-.footer-form-button-wrap{
-	display: flex;
-}
 .footer-form-container {
+	margin-top: 72px;
 }
 .footer-form-title{
 	text-align: left;
-}
-.footer-form-button {
-		margin-left: 24px;
 }
 .footer-form-input {
 	width: 264px;
 }
 }
 
-@media screen and (max-width: 1199px) {
+
+
+@media screen and (min-width: 1200px) {
+.footer-container {
+	display: flex;
+	width: 1158px;
+		margin-left: auto;
+		margin-right: auto;
+}
+
+.footer-logo-container {
+margin-right: 120px;
+}
+
 .footer-form-container {
-	text-align: center;	
-	margin-top: 72px;
-		}
-	
+	margin-left: 80px;
+}
+
+.footer-form-title {
+	text-align: left;
+}
+
 }
