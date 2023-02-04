@@ -19,6 +19,11 @@ body {
 	line-height: 1.5;
 }
 
+h1,h2,h3,h4,h5,h6,p,ul {
+	margin: 0;
+	padding: 0;
+}
+
 a {
 	font-style: normal;
 	text-decoration: none;
@@ -34,30 +39,40 @@ button {
 	list-style: none;
 }
 
-@media screen and (max-width: 767px) {
+ 
+	.section {
+		padding-top: 96px;
+		padding-bottom: 96px;
+@media screen and (min-width:1200px) {
+padding-top: 120px;
+padding-bottom: 120px;
+}
+	}
+
 	.container {
 			max-width: 428px;
 			margin-left: auto;
 			margin-right: auto;
 			padding: 0 15px;
-		}
-}
-@media screen and(min-width: 768px) {
-	.container {
-			width: 768px;
-			margin-left: auto;
-				margin-right: auto;
-				padding: 0 15px;
-}
-}
 
-@media screen and (min-width: 1200px) {
-	.container {
-		width: 1158px;
-		margin-left: auto;
-			margin-right: auto;
-			padding: 0 15px;
-	}
-}
+		}
+		@media screen and(min-width: 768px) {
+			.container {
+				width: 768px;
+				margin-left: auto;
+					margin-right: auto;
+					padding: 0 15px;
+			}
+		}
+
+		@media screen and (min-width: 1200px) {
+			.container {
+				width: 1158px;
+				margin-left: auto;
+					margin-right: auto;
+					padding: 0 15px;
+			}
+		}
+
 
 /*# sourceMappingURL=main.css.map */

@@ -13,6 +13,7 @@ background-size: cover;
 	margin-right: auto;
 	font-weight: 700;
 	color: $white-color;
+
 }
 
 .hero-button {
@@ -38,27 +39,30 @@ background-size: cover;
 
 @media screen and (max-width: 767px) {
 	.section-hero {
-			max-width: 428px;
-			padding: 112px 0;
-			height: 432px;
-			background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+		max-width: 428px;
+		padding: 112px 0;
+		height: 432px;
+		background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 				url("../images/hero/hero-mobile.jpg");
 		}
+	.hero-button {
+	margin-top: 72px;
+}
 		@media (min-device-pixel-ratio: 2),
 		(min-resolution: 192dpi),
 		(min-resolution: 2dppx) {
-			.section-hero {
-				background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-					url("../images/hero/hero-mobile@2x.jpg");
+	.section-hero {
+		background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+		url("../images/hero/hero-mobile@2x.jpg");
 	
 			}
 		}
 
-		.hero-title {
-			max-width: 318px;
-			font-size: 36px;
-			line-height: 1.11;
-			color: $white-color;
+	.hero-title {
+		max-width: 318px;
+		font-size: 36px;
+		line-height: 1.11;
+		color: $white-color;
 		}
 	
 }
@@ -86,6 +90,7 @@ url("../images/hero/hero-tablet@2x.jpg");
 	font-size: 56px;
 	line-height: 1.07;
 }
+
 	}
 
 @media screen and (min-width: 1200px) {
