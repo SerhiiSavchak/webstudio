@@ -78,17 +78,11 @@ margin-left: auto;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	gap: 72px 24px;
 }
 
 .team-item {
 	width: calc((100% - 24px) / 2);
-	&:nth-child(odd) {
-		margin-right: 24px;
-	}
-	&:nth-child(3),
-	&:last-child {
-	margin-top: 72px;
-	}
 }
 }
 
