@@ -3,7 +3,7 @@
 }
 
 .footer-container {
-padding: 96px 15px;
+padding: 0 15px;
 }
 
 .logo-footer {
@@ -118,10 +118,13 @@ fill: $white-color;
 }
 
 @media screen and (max-width:767px) {
+.page-footer {
+padding-top: 96px;
+	padding-bottom: 96px;
+}
 .footer-logo-container {
 	text-align: center;
 	}
-
 	.footer-form-container {
 		margin-top: 72px;
 	}
@@ -148,6 +151,10 @@ justify-content: center;
 }
 
 @media screen and (min-width:768px) {
+.page-footer {
+	padding-top: 96px;
+	padding-bottom: 96px;
+}
 .logo-social-wrap {
 	display: flex;
 	}
@@ -156,8 +163,8 @@ justify-content: center;
 	align-items: center;
 }
 .footer-container {
-	padding: 100px 0;
 }
+
 .footer-form-button {
 	margin-left: 24px;
 }

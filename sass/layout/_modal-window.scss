@@ -261,5 +261,13 @@ height: 24px;
 	border: transparent;
 }
 
+@media screen and (max-width: 427px) {
+	.modal {
+		width: 95%;
+	}
 
+	.modal-form-label[for="modal-input-checkbox"] {
+		font-size: 8px;
+	}
 
+}
