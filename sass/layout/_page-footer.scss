@@ -23,7 +23,7 @@ padding: 0 15px;
 }
 
 .footer-text {
-max-width: 268px;
+max-width: 264px;
 color: $secondary-accent-color;
 }
 
@@ -114,6 +114,7 @@ color: $white-color;
 .footer-plain-icon {
 width: 24px;
 height: 24px;
+margin-left: 16px;
 fill: $white-color;
 }
 
@@ -203,6 +204,10 @@ justify-content: center;
 		margin-right: auto;
 }
 
+
+.footer-form-input {
+	width: 264px;
+}
 .footer-logo-container {
 margin-right: 120px;
 }
