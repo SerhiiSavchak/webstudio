@@ -35,10 +35,10 @@
         <nav class="nav-container">
           <ul class="nav-list list">
             <li class="nav-item">
-              <a class="nav-link active" href="./index.html">Studio</a>
+              <a class="nav-link" href="./index.html">Studio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./portfolio.html">Portfolio</a>
+              <a class="nav-link active" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="">Contacts</a>
@@ -166,17 +166,19 @@
                 <button class="examples-nav-button" type="button">App</button>
               </li>
 
-              <li class="examples-nav-item">
-                <button class="examples-nav-button" type="button">
-                  Design
-                </button>
-              </li>
+              <div class="examples-button-wrap">
+                <li class="examples-nav-item">
+                  <button class="examples-nav-button" type="button">
+                    Design
+                  </button>
+                </li>
 
-              <li class="examples-nav-item">
-                <button class="examples-nav-button" type="button">
-                  Marketing
-                </button>
-              </li>
+                <li class="examples-nav-item">
+                  <button class="examples-nav-button" type="button">
+                    Marketing
+                  </button>
+                </li>
+              </div>
             </ul>
           </div>
 
@@ -192,12 +194,62 @@
                         Ecommerce App · Cloud Storage App
                       </p>
                     </div>
-                    <img
-                      src="./images/examples/examples-1.jpg"
-                      height="280"
-                      width="396"
-                      alt="Banking app"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/examples/examples-1-360px.webp    1x,
+                          ./images/examples/examples-1-360px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-1-360px.jpg    1x,
+                          ./images/examples/examples-1-360px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-1-356px.webp    1x,
+                          ./images/examples/examples-1-356px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-1-356px.jpg    1x,
+                          ./images/examples/examples-1-356px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-1-396px.webp    1x,
+                          ./images/examples/examples-1-396px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(max-width:767px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-1-396px.jpg    1x,
+                          ./images/examples/examples-1-396px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="./images/examples/examples-1.jpg"
+                        height="280"
+                        width="396"
+                        alt="Banking app"
+                      />
+                    </picture>
                   </div>
                   <div class="examples-thumb-bottom">
                     <h2 class="examples-subtitle">
@@ -218,12 +270,62 @@
                         Ecommerce App · Cloud Storage App
                       </p>
                     </div>
-                    <img
-                      src="./images/examples/examples-2.jpg"
-                      height="280"
-                      width="396"
-                      alt="cashless product"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/examples/examples-2-360px.webp    1x,
+                          ./images/examples/examples-2-360px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-2-360px.jpg    1x,
+                          ./images/examples/examples-2-360px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-2-356px.webp    1x,
+                          ./images/examples/examples-2-356px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-2-356px.jpg    1x,
+                          ./images/examples/examples-2-356px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-2-396px.webp    1x,
+                          ./images/examples/examples-2-396px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(max-width:767px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-2-396px.jpg    1x,
+                          ./images/examples/examples-2-396px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="./images/examples/examples-2.jpg"
+                        height="280"
+                        width="396"
+                        alt="cashless product"
+                      />
+                    </picture>
                   </div>
                   <div class="examples-thumb-bottom">
                     <h2 class="examples-subtitle">Cashless Payment</h2>
@@ -242,12 +344,62 @@
                         Ecommerce App · Cloud Storage App
                       </p>
                     </div>
-                    <img
-                      src="./images/examples/examples-3.jpg"
-                      height="280"
-                      width="396"
-                      alt="Meditation app"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/examples/examples-3-360px.webp    1x,
+                          ./images/examples/examples-3-360px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-3-360px.jpg    1x,
+                          ./images/examples/examples-3-360px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-3-356px.webp    1x,
+                          ./images/examples/examples-3-356px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-3-356px.jpg    1x,
+                          ./images/examples/examples-3-356px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-3-396px.webp    1x,
+                          ./images/examples/examples-3-396px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(max-width:767px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-3-396px.jpg    1x,
+                          ./images/examples/examples-3-396px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="./images/examples/examples-3.jpg"
+                        height="280"
+                        width="396"
+                        alt="Meditation app"
+                      />
+                    </picture>
                   </div>
                   <div class="examples-thumb-bottom">
                     <h2 class="examples-subtitle">Meditaion App</h2>
@@ -266,12 +418,62 @@
                         Ecommerce App · Cloud Storage App
                       </p>
                     </div>
-                    <img
-                      src="./images/examples/examples-4.jpg"
-                      height="280"
-                      width="396"
-                      alt="Taxi app"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/examples/examples-4-360px.webp    1x,
+                          ./images/examples/examples-4-360px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-4-360px.jpg    1x,
+                          ./images/examples/examples-4-360px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-4-356px.webp    1x,
+                          ./images/examples/examples-4-356px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-4-356px.jpg    1x,
+                          ./images/examples/examples-4-356px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-4-396px.webp    1x,
+                          ./images/examples/examples-4-396px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(max-width:767px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-4-396px.jpg    1x,
+                          ./images/examples/examples-4-396px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="./images/examples/examples-4.jpg"
+                        height="280"
+                        width="396"
+                        alt="Taxi app"
+                      />
+                    </picture>
                   </div>
                   <div class="examples-thumb-bottom">
                     <h2 class="examples-subtitle">Taxi Service</h2>
@@ -290,12 +492,62 @@
                         Ecommerce App · Cloud Storage App
                       </p>
                     </div>
-                    <img
-                      src="./images/examples/examples-5.jpg"
-                      height="280"
-                      width="396"
-                      alt="Illustrations app"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/examples/examples-5-360px.webp    1x,
+                          ./images/examples/examples-5-360px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-5-360px.jpg    1x,
+                          ./images/examples/examples-5-360px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-5-356px.webp    1x,
+                          ./images/examples/examples-5-356px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-5-356px.jpg    1x,
+                          ./images/examples/examples-5-356px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-5-396px.webp    1x,
+                          ./images/examples/examples-5-396px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(max-width:767px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-5-396px.jpg    1x,
+                          ./images/examples/examples-5-396px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="./images/examples/examples-5.jpg"
+                        height="280"
+                        width="396"
+                        alt="Illustrations app"
+                      />
+                    </picture>
                   </div>
                   <div class="examples-thumb-bottom">
                     <h2 class="examples-subtitle">Screen Illustrations</h2>
@@ -314,12 +566,62 @@
                         Ecommerce App · Cloud Storage App
                       </p>
                     </div>
-                    <img
-                      src="./images/examples/examples-6.jpg"
-                      height="280"
-                      width="396"
-                      alt="Online course app"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/examples/examples-6-360px.webp    1x,
+                          ./images/examples/examples-6-360px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-6-360px.jpg    1x,
+                          ./images/examples/examples-6-360px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-6-356px.webp    1x,
+                          ./images/examples/examples-6-356px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-6-356px.jpg    1x,
+                          ./images/examples/examples-6-356px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-6-396px.webp    1x,
+                          ./images/examples/examples-6-396px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(max-width:767px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-6-396px.jpg    1x,
+                          ./images/examples/examples-6-396px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="./images/examples/examples-6.jpg"
+                        height="280"
+                        width="396"
+                        alt="Online course app"
+                      />
+                    </picture>
                   </div>
                   <div class="examples-thumb-bottom">
                     <h2 class="examples-subtitle">Online Courses</h2>
@@ -338,12 +640,62 @@
                         Ecommerce App · Cloud Storage App
                       </p>
                     </div>
-                    <img
-                      src="./images/examples/examples-7.jpg"
-                      height="280"
-                      width="396"
-                      alt="Instastories design"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/examples/examples-7-360px.webp    1x,
+                          ./images/examples/examples-7-360px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-7-360px.jpg    1x,
+                          ./images/examples/examples-7-360px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-7-356px.webp    1x,
+                          ./images/examples/examples-7-356px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-7-356px.jpg    1x,
+                          ./images/examples/examples-7-356px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-7-396px.webp    1x,
+                          ./images/examples/examples-7-396px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(max-width:767px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-7-396px.jpg    1x,
+                          ./images/examples/examples-7-396px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="./images/examples/examples-7.jpg"
+                        height="280"
+                        width="396"
+                        alt="Instastories design"
+                      />
+                    </picture>
                   </div>
                   <div class="examples-thumb-bottom">
                     <h2 class="examples-subtitle">Instagram Stories Concept</h2>
@@ -362,12 +714,62 @@
                         Ecommerce App · Cloud Storage App
                       </p>
                     </div>
-                    <img
-                      src="./images/examples/examples-8.jpg"
-                      height="280"
-                      width="396"
-                      alt="Organic food website"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/examples/examples-8-360px.webp    1x,
+                          ./images/examples/examples-8-360px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-8-360px.jpg    1x,
+                          ./images/examples/examples-8-360px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-8-356px.webp    1x,
+                          ./images/examples/examples-8-356px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-8-356px.jpg    1x,
+                          ./images/examples/examples-8-356px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-8-396px.webp    1x,
+                          ./images/examples/examples-8-396px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(max-width:767px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-8-396px.jpg    1x,
+                          ./images/examples/examples-8-396px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="./images/examples/examples-8.jpg"
+                        height="280"
+                        width="396"
+                        alt="Organic food website"
+                      />
+                    </picture>
                   </div>
                   <div class="examples-thumb-bottom">
                     <h2 class="examples-subtitle">Organic Food</h2>
@@ -386,12 +788,62 @@
                         Ecommerce App · Cloud Storage App
                       </p>
                     </div>
-                    <img
-                      src="./images/examples/examples-9.jpg"
-                      height="280"
-                      width="396"
-                      alt="Coffee website"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/examples/examples-9-360px.webp    1x,
+                          ./images/examples/examples-9-360px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-9-360px.jpg    1x,
+                          ./images/examples/examples-9-360px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-9-356px.webp    1x,
+                          ./images/examples/examples-9-356px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-9-356px.jpg    1x,
+                          ./images/examples/examples-9-356px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-9-396px.webp    1x,
+                          ./images/examples/examples-9-396px@2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(max-width:767px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/examples/examples-9-396px.jpg    1x,
+                          ./images/examples/examples-9-396px@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="./images/examples/examples-9.jpg"
+                        height="280"
+                        width="396"
+                        alt="Coffee website"
+                      />
+                    </picture>
                   </div>
                   <div class="examples-thumb-bottom">
                     <h2 class="examples-subtitle">Fresh Coffee</h2>
@@ -472,5 +924,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- Script Js -->
+    <script src="./js/mobile_menu.js"></script>
   </body>
 </html>
